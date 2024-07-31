@@ -6,11 +6,11 @@
 }
 
 :root{
-    --cor-um: #D94848;
-    --cor-dois: #F25041;
-    --cor-tres: #D9AE89;
-    --cor-quatro: #8C6F56;
-    --cor-cindo: #0D0D0D;
+    --cor-um: #2A4759;
+    --cor-dois: #687E8C;
+    --cor-tres: #B4CED9;
+    --cor-quatro: #73440A;
+    --cor-cindo: #BFBCBA;
 }
 
 html{
@@ -41,7 +41,7 @@ a:hover{
 }
 
 #letter-first{
-    color: #F25041;
+    color: var(--cor-dois);
 }
 
 nav{
@@ -66,7 +66,7 @@ nav{
 }
 
 .nav-list a:hover{
-    color: var(--cor-um);
+    color: var(--cor-dois);
     transition-duration: 0.5s;
 }
 
@@ -95,7 +95,7 @@ main{
 }
 
 #letter-hello{
-    background-color: var(--cor-um);
+    background-color: var(--cor-dois);
     color: var(--cor-cindo);
     padding: 5px;
     border-radius: 10px;
@@ -123,7 +123,7 @@ main{
     border: none;
     background-color: white;
     cursor: pointer;
-    font-family: "Ubuntu", sans-serif
+    font-family: "Ubuntu", sans-serif;
 }
 
 #page-aboutme{
@@ -133,7 +133,7 @@ main{
     background-color: #545454;
     color: white;
     height: 100vh;
-    font-family: "Ubuntu", sans-serif
+    font-family: "Ubuntu", sans-serif;
 }
 
 #container-photo-aboutme img{
@@ -174,12 +174,14 @@ main{
     align-items: center;
     justify-content: center;
     gap: 30px;
+    padding-top: 50px;
 }
 
 .button-aboutme{
     width: 50px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 50px;
+    background-color: var(--cor-dois);
     border: none;
     
 }
@@ -190,7 +192,7 @@ main{
     transform: scale(1);
   }
   100%{
-    transform: scale(1.02);
+    transform: scale(0.8);
   }
 }
 
@@ -200,4 +202,97 @@ button:hover{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#experiencies{
+    height: 100vh;
+    background-color:#5f5f5f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0px 50px 0px 50px;
+}
+
+#h1_experiencies {
+    padding-bottom: 50px;
+    color: white;
+    text-shadow: 2px 2px 10px #0d0d0d;
+    font-size: 30px;
+}
+
+#container-main-experiencies{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    color: var(--cor-um);
+    height: 500px;
+    border: 2px solid rgb(75, 75, 75);
+    box-shadow: 0.5px 0px 50px #272727;
+    border-radius: 20px;
+    background-color: #545454;
+}
+
+#container-experiencies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.class_experiencias{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+    background-color: #4c4c4c;
+    box-shadow: 1px 1px 40px #272727;
+    border-radius: 30px;
+    height: 50vh;
+    width: 50vh;
+}
+
+.list{
+    list-style: none;
+}
+
+#img-hanke{
+    background-color: white;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#container-experiencies {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#professional-experience{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#professional-experience h1{
+    font-size: 20px;
+    color: var(--cor-tres);
+}
+
+#professional-experience img {
+    width: 50px;
+}
+
+#date-professional-experience{
+    color: var(--cor-tres);
+    font-size: 15px;
+    text-align: justify;
 }
