@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-um: #D94848;
+    --cor-dois: #F25041;
+    --cor-tres: #D9AE89;
+    --cor-quatro: #8C6F56;
+    --cor-cindo: #0D0D0D;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("images/background.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+
+.logo{
+    display: flex;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#letter-first{
+    color: #F25041;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+
+.nav-list a:hover{
+    color: var(--cor-um);
+    transition-duration: 0.5s;
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+}
+
+#container-main {
+    height: 100vh;
+}
+
+#presentation{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    padding-left: 15%;
+    padding-top: 8%;
+}
+
+#presentation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#letter-hello{
+    background-color: var(--cor-um);
+    color: var(--cor-cindo);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#presentation p{
+    font-size: 25px;
+}
+
+#presentation h1{
+    font-size: 60px;
+}
+
+#buttons-presentation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#presentation button {
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif
+}
+
+#page-aboutme{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #545454;
+    color: white;
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif
+}
+
+#container-photo-aboutme img{
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 20px #0d0d0d;
+}
+
+#text-aboutme{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px;
+}
+
+#text-aboutme ul {
+    text-align: justify;
+}
+
+#text-aboutme li {
+    padding: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #272727;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px ;
+    background-color: var(--cor-dois);
+}
+
+#buttons-aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.button-aboutme{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+
+@keyframes button {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.02);
+  }
+}
+
+button:hover{
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
