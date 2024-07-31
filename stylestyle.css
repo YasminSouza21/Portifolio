@@ -6,11 +6,12 @@
 }
 
 :root{
-    --cor-um: #2A4759;
-    --cor-dois: #687E8C;
-    --cor-tres: #B4CED9;
-    --cor-quatro: #73440A;
-    --cor-cindo: #BFBCBA;
+    --cor-um: #070F2B;
+    --cor-dois: #1B1A55;
+    --cor-tres: #535C91;
+    --cor-quatro: #508C9B;
+    --cor-cindo: #BFB8B0;
+    --cor-sexta: #9290C3;
 }
 
 html{
@@ -18,7 +19,7 @@ html{
 }
 
 body {
-    background: url("images/background.jpg") no-repeat center center;
+    background: url("images/fundo-preto-e-branco-ondulado_23-2150530921.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
 }
@@ -26,6 +27,7 @@ body {
 a{
     text-decoration: none;
     color: white;
+    color: #0d0d0d;
 }
 
 a:hover{
@@ -66,7 +68,7 @@ nav{
 }
 
 .nav-list a:hover{
-    color: var(--cor-dois);
+    color: var(--cor-tres);
     transition-duration: 0.5s;
 }
 
@@ -81,7 +83,7 @@ main{
 
 #presentation{
     position: relative;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     font-family: "Ubuntu", sans-serif;
@@ -95,7 +97,7 @@ main{
 }
 
 #letter-hello{
-    background-color: var(--cor-dois);
+    background-color: var(--cor-um);
     color: var(--cor-cindo);
     padding: 5px;
     border-radius: 10px;
@@ -114,6 +116,7 @@ main{
     align-items: center;
     gap: 30px;
     margin-top: 20px;
+    color: #dbdbdb;
 }
 
 #presentation button {
@@ -130,8 +133,8 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #545454;
-    color: white;
+    background-color: #dbdbdb;
+    color: black;
     height: 100vh;
     font-family: "Ubuntu", sans-serif;
 }
@@ -166,7 +169,7 @@ main{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 10px ;
-    background-color: var(--cor-dois);
+    background-color: var(--cor-tres);
 }
 
 #buttons-aboutme{
@@ -206,7 +209,7 @@ button:hover{
 
 #experiencies{
     height: 100vh;
-    background-color:#5f5f5f;
+    background-color: #d4d4d4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,8 +220,8 @@ button:hover{
 
 #h1_experiencies {
     padding-bottom: 50px;
-    color: white;
-    text-shadow: 2px 2px 10px #0d0d0d;
+    color: var(--cor-dois);
+    text-shadow: 2px 2px 10px #818181;
     font-size: 30px;
 }
 
@@ -230,10 +233,7 @@ button:hover{
     gap: 100px;
     color: var(--cor-um);
     height: 500px;
-    border: 2px solid rgb(75, 75, 75);
-    box-shadow: 0.5px 0px 50px #272727;
-    border-radius: 20px;
-    background-color: #545454;
+
 }
 
 #container-experiencies{
@@ -250,12 +250,16 @@ button:hover{
     text-align: center;
     gap: 30px;
     padding: 20px;
-    color: white;
-    background-color: #4c4c4c;
-    box-shadow: 1px 1px 40px #272727;
+    color: black;
+    background-color: #d4d4d4;
+    box-shadow: 1px 1px 20px #a8a8a8;
     border-radius: 30px;
     height: 50vh;
     width: 50vh;
+}
+
+.h1_experiencies {
+    color: var(--cor-dois);
 }
 
 .list{
@@ -284,7 +288,8 @@ button:hover{
 
 #professional-experience h1{
     font-size: 20px;
-    color: var(--cor-tres);
+    color: var(--cor-quatro);
+    font-weight: bold;
 }
 
 #professional-experience img {
@@ -292,7 +297,24 @@ button:hover{
 }
 
 #date-professional-experience{
-    color: var(--cor-tres);
+    color: var(--cor-quatro);
+    font-weight: bold;
     font-size: 15px;
     text-align: justify;
+}
+
+#skills{
+    background-color: #dbdbdb;
+    height: 100vh;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 100;
+    color: #1B1A55;
+    height: 5vh;
 }
