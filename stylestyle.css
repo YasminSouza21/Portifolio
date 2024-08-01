@@ -22,6 +22,7 @@ body {
     background: url("images/fundo-preto-e-branco-ondulado_23-2150530921.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
+    font-family: "Ubuntu", sans-serif;
 }
 
 a{
@@ -88,7 +89,7 @@ main{
     flex-direction: column;
     font-family: "Ubuntu", sans-serif;
     padding-left: 15%;
-    padding-top: 8%;
+    padding-top: 10%;
 }
 
 #presentation-container {
@@ -209,103 +210,185 @@ button:hover{
 
 #experiencies{
     height: 100vh;
-    background-color: #d4d4d4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    color: white;
-    padding: 0px 50px 0px 50px;
 }
 
-#h1_experiencies {
-    padding-bottom: 50px;
-    color: var(--cor-dois);
-    text-shadow: 2px 2px 10px #818181;
+#experiencies h1{
     font-size: 30px;
 }
 
-#container-main-experiencies{
+#container-cards{
     display: flex;
+    position: relative;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-    gap: 100px;
-    color: var(--cor-um);
-    height: 500px;
-
+    height: 100%;
+    width: 100%;
 }
 
-#container-experiencies{
+.container{
+    position: relative;
+    width: 350px;
+    height: 550px;
+}
+
+.container:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.flip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.frente,
+.tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.819);
+    backface-visibility: hidden;
+}
+
+.frente{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #9290C3;
+    font-size: 25px;
+}
+
+.tras{
+    display: flex;
+    align-items: center;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
-}
-
-.class_experiencias{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    padding: 20px;
-    color: black;
-    background-color: #d4d4d4;
-    box-shadow: 1px 1px 20px #a8a8a8;
-    border-radius: 30px;
-    height: 50vh;
-    width: 50vh;
-}
-
-.h1_experiencies {
-    color: var(--cor-dois);
-}
-
-.list{
-    list-style: none;
-}
-
-#img-hanke{
-    background-color: white;
-    height: 50px;
-    border-radius: 50px;
-}
-
-#container-experiencies {
-    display: flex;
-    flex-direction: column;
-}
-
-
-#professional-experience{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#professional-experience h1{
-    font-size: 20px;
-    color: var(--cor-quatro);
+    background-color: var(--cor-cindo);
+    transform: rotateY(180deg);
     font-weight: bold;
 }
 
-#professional-experience img {
+.linha-do-tempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+    background-color: #0d0d0d;
+    height: 100%;
+    width: 8px;
+}
+
+.ano {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.ano p{
+    font-size: 16px;
+}
+
+.ano img{
     width: 50px;
 }
 
-#date-professional-experience{
-    color: var(--cor-quatro);
-    font-weight: bold;
-    font-size: 15px;
-    text-align: justify;
+#faculdade{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#faculdade img{
+    border-radius: 50px;
+}
+
+#colegio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#colegio img{
+    border-radius: 50px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+#text-ano-academic-education{
+    gap: 100px;
+}
+
+#image-hanke {
+    background-color: white;
+    border-radius: 50px;
 }
 
 #skills{
-    background-color: #dbdbdb;
     height: 100vh;
+    background-color: #dbdbdb;
+    color: var(--cor-dois);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.467);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: var(--cor-cindo);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.503);
+    color: black;
+    font-weight: bold;
+}
+
+.card img{
+    width: 80px;
+}
+
+.button-card{
+    margin-top: 30px;
+    padding: 10px;
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #535c9187;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
 }
 
 #footer{
@@ -317,4 +400,18 @@ button:hover{
     font-weight: 100;
     color: #1B1A55;
     height: 5vh;
+}
+
+.btn-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor-tres);
+    border-radius: 12px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: all ease 400ms;
 }
