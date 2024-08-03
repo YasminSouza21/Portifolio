@@ -211,6 +211,7 @@ button:hover{
 #experiencies{
     height: 100vh;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #experiencies h1{
