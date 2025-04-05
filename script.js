@@ -6,6 +6,7 @@ let header = document.querySelector('.header');
 let btnsHeader = document.querySelectorAll('.text-btn-header');
 
 window.addEventListener("scroll", () => {
+
     if(scrollY > 450){
         btnScroll.classList.add('hidden');
     } else {

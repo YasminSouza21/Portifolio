@@ -351,10 +351,36 @@ html{
 }
 
 .projects-did{
-    height: 280px;
-    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
     border-radius: 20px;
     background-color: var(--main-color);
+    transition: 0.3s all;
+}
+
+.projects-did:hover{
+    transform: translateY(-15px);
+}
+
+.projects-did a {
+    color: #6200EE;
+}
+
+.projects-did a:hover {
+    color: #6200EE;
+    text-decoration: underline;
+}
+
+.projects-did img{
+    max-width: 380px;
+    border-radius: 20px;
 }
 
 .my-skills-container{
@@ -416,6 +442,7 @@ footer{
     padding: 10px;
     text-align: center;
 }
+
 
 @media (max-width: 1055px){
     .experience{
